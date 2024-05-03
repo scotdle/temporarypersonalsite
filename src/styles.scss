@@ -3,6 +3,9 @@ $futura: futura-pt;
 $futura-bold: futura-pt-bold;
 $josefin: josefin-sans;
 
+body {
+  box-sizing: border-box;
+}
 
 //.l-page-main
 .l-page-main {
@@ -11,6 +14,7 @@ $josefin: josefin-sans;
   //.l-page-main__container
   &__container {
     align-items: center;
+    box-sizing: border-box;
     display: flex;
     height: 100%;
     flex-flow: column wrap;
@@ -22,7 +26,12 @@ $josefin: josefin-sans;
 
   //.l-page-main__image
   &__image {
-
+    position: absolute;
+    height: auto;
+    width: 300px;
+    display: flex;
+    justify-content: center; // Centers the item
+    bottom: 0;
   }
 
   //.l-page-main__heading
